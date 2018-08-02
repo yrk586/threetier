@@ -4,7 +4,7 @@
     {
       "Action": "CREATE",
       "ResourceRecordSet": {
-        "Name": "testapp.mohansyntest.tk",
+        "Name": "testapp.anzclass.tk",
         "Type": "CNAME",
         "TTL": 1000,
         "ResourceRecords": [
