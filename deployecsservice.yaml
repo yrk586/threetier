@@ -30,7 +30,6 @@ Parameters:
    taskdefver:
       Type: String
       Description: Enter the taskdefinition ARN
-      Default: 
    servicename:
       Type: String
       Description: Enter the servicename
