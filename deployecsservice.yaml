@@ -64,7 +64,7 @@ Resources:
               InstancePort: 10001  
           HealthCheck:
             HealthyThreshold: 2
-            Target: HTTP:80/status.html
+            Target: HTTP:80
             Interval: 60
             UnhealthyThreshold: 2
             Timeout: 5
