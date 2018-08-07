@@ -43,4 +43,4 @@
            secondsubnetid: "{{ secondsubnetid }}"
            clustername: "{{ clustername }}"
            taskdefver: "{{ taskdef.taskdefinition.taskDefinitionArn }}"
-	   servicename: "{{ servicename }}"
+           servicename: "{{ servicename }}"
