@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: "mohanraz81/synthreetierbackend"
+          image: "mohanraz81/ubsbackend"
           ports:
             - name: http
               containerPort: 80
@@ -76,7 +76,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: "mohanraz81/synthreetierfront"
+        image: "mohanraz81/ubsfrontend"
         ports:
           - name: http
             containerPort: 80
