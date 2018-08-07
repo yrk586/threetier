@@ -4,6 +4,7 @@
   tasks:
     - name: Create task definition
       ecs_taskdefinition:
+        region: us-east-1
         containers:
         - name: frontend
           cpu: 1
