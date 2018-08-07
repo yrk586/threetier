@@ -4,7 +4,7 @@
     {
       "Action": "CREATE",
       "ResourceRecordSet": {
-        "Name": "myapp.syntest123.tk",
+        "Name": "myapp123.syntest123.tk",
         "Type": "CNAME",
         "TTL": 1000,
         "ResourceRecords": [
