@@ -6,27 +6,35 @@ Parameters:
    sgname:
       Type: String
       Description: Enter the elb securitygroup name
+      Default: testweblbsg
    vpcid:
       Type: String
       Description: Enter the vpcid
+      Default: vpc-a222f6d8
    elbname:
       Type: String
       Description: Enter the elasticloadbalancer name
+      Default: testweblb
    firstsubnetid:
       Type: String
       Description: Enter the first-subnet-id to use with elb
+      Default: subnet-39962d5e
    secondsubnetid:
       Type: String
       Description: Enter the second-subnet-id to use with elb 
+      Default: subnet-d697dc9c
    clustername:
       Type: String
       Description: Enter the cluster name
+      Default: testcluster
    taskdefver:
       Type: String
       Description: Enter the taskdefinition ARN
+      Default: 
    servicename:
       Type: String
       Description: Enter the servicename
+      Default: testservice
 Resources:
    elbsgcreation:
        Type: AWS::EC2::SecurityGroup 
@@ -199,7 +207,7 @@ Resources:
    AutoScalingHighPolicy:
      Type: AWS::ApplicationAutoScaling::ScalingPolicy
      Properties:
-       PolicyName: ECSScalingBlogPolicy
+       PolicyName: autoscalinghighpolicy
        PolicyType: StepScaling
        ScalingTargetId:
          Ref: AutoScalingTarget
@@ -215,7 +223,7 @@ Resources:
    AutoScalingLowPolicy:
      Type: AWS::ApplicationAutoScaling::ScalingPolicy
      Properties:
-       PolicyName: ECSScalingBlogPolicy
+       PolicyName: autoscalinglowpolicy
        PolicyType: StepScaling
        ScalingTargetId:
          Ref: AutoScalingTarget
