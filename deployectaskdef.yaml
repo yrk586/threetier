@@ -11,7 +11,8 @@
           memory: 200
           essential: true
           image: mohanraz81/ubsfrontend
-          links: backend
+          links: 
+            - backend
           portMappings:
             - containerPort: 80
               hostPort: 10001
