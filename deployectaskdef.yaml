@@ -10,7 +10,7 @@
           cpu: 0.5
           memory: 200
           essential: true
-          image: mohanraz81/ubsfrontend
+          image: mohanraz81/cytelfrontend
           links: 
             - backend
           portMappings:
@@ -20,7 +20,7 @@
           cpu: 0.5
           memory: 200
           essential: true
-          image: mohanraz81/ubsbackend
+          image: mohanraz81/cytelbackend
           environment:
             - name: "MY_DB_USER"
               value: "mysql_admin"

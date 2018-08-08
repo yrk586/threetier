@@ -65,7 +65,7 @@ Resources:
           HealthCheck:
             HealthyThreshold: 2
             Target: HTTP:10001/status.html
-            Interval: 60
+            Interval: 30
             UnhealthyThreshold: 2
             Timeout: 5
    ecsserviceRole:
