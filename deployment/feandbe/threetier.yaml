@@ -79,7 +79,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: "mohanraz81/ubs2frontend"
+        image: "mohanraz81/synfront1908"
         ports:
           - name: http
             containerPort: 80
