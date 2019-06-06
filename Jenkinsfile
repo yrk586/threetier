@@ -13,7 +13,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          docker.build(registry + ":$BUILD_NUMBER" frontend, "frontend" )
+          def frontend = docker.build( "registry:${env.BUILD_NUMBER}", "frontend" )
         }
       }
     }
