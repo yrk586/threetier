@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('frontend') {
           steps {
-            sh 'docker build -t mohanraz81/candlfrontend:"${env.BUILD_NUMBER}" frontend'
+            sh 'docker build -t mohanraz81/candlfrontend:"${BUILD_NUMBER}" frontend'
           }
         }
         stage('bacend') {
