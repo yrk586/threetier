@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "mohanraz81/candlfrontend"
-    registryCredential = ‘dockerhub’
+    registryCredential = "dockerhub"
   }
   agent any
   stages {
