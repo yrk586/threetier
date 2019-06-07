@@ -1,8 +1,4 @@
 pipeline {
-  environment {
-    registry = "mohanraz81/candlfrontend"
-    registryCredential = "dockerhub"
-  }
   agent any
   stages {
     stage('Cloning Git') {
@@ -11,11 +7,21 @@ pipeline {
       }
     }
     stage('Building image') {
-      steps{
+      steps {
         script {
           def frontend = docker.build( "registry:${env.BUILD_NUMBER}", "frontend" )
         }
+
       }
     }
+    stage('test') {
+      steps {
+        ansiblePlaybook 'deployment/database/createdb.yaml'
+      }
+    }
+  }
+  environment {
+    registry = 'mohanraz81/candlfrontend'
+    registryCredential = 'dockerhub'
   }
 }
